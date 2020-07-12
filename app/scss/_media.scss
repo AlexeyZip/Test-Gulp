@@ -1,0 +1,48 @@
+
+@media (max-width:1200px) {
+    .item {
+        width: 40%;
+        margin: 2%;
+    }
+  } 
+  
+  @media (max-width:900px) {
+    .item {
+        width: 45%;
+        margin: 2%;
+    }
+  }
+  
+  
+  @media (max-width:550px) {
+    .item {
+        width: 95%;
+        margin: 2%;
+    }
+  }
+  
+  @media (max-width: 530px) {
+    .topmenu li {
+      float: none;
+    }
+    .menu-btn {
+      display: block;
+    }
+    .topmenu {
+        display: none;
+    }
+    #btn:checked ~ .topmenu {
+        display: block;
+    }
+  
+    .toggleMenu i{
+        display: block;
+    }
+  
+  
+    .slick-slider__items{
+      margin-top: 280px;
+    }
+  
+  }
+  

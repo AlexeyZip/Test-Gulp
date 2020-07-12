@@ -1,0 +1,250 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+* {
+    box-sizing: border-box;
+  }
+  /* body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  } */
+  nav {
+    background: #ce8921;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav ul:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  nav a {
+    text-decoration: none;
+    display: block;
+    transition: 0.3s linear;
+  }
+  .topmenu > li {
+    float: left;
+    position: relative;
+    border-left: 1px solid black;
+  }
+  .topmenu > li:first-child {
+    border-left: 0;
+  }
+  
+  
+  
+  .topmenu > li > a {
+    padding: 20px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fefdfd;
+    letter-spacing: 2px;
+  }
+  .topmenu a:hover{
+    color: #212121;
+  }
+  
+  .submenu li:hover{
+    background: orange;
+  }
+  
+  .topmenu .fa,
+  .submenu .fa {
+    margin-left: 5px;
+    color: inherit;
+  }
+  .submenu {
+    position: absolute;
+    z-index: 5;
+    min-width: 200px;
+    background: white;
+    border-top: 1px solid #cbcbcc;
+    border-left: 1px solid #cbcbcc;
+    border-right: 1px solid #cbcbcc;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: 0.3s linear;
+  }
+  .submenu li {
+    position: relative;
+  }
+  .submenu li a {
+    color: #282828;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-bottom: 1px solid #cbcbcc;
+  }
+  .submenu .submenu {
+    position: absolute;
+    left: 62px;
+    top: 73px;
+    transition: 0.3s linear;
+  }
+  nav li:hover > .submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  .menu-btn [type='checkbox'] {
+    display: none;
+  }
+  .header__menu [type='checkbox'] {
+    display: none;
+  }
+  .toggleMenu i{
+      padding: 10px 10px 10px 30px;
+      display: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  html {
+    min-height: 100%
+  }
+  
+  body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 15px Tahoma;
+    color: #555;
+  }
+  
+  #top {
+    width: 100%;
+    background: #222;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+  }
+  
+  #top a {
+    color: #00FF00;
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 200px;
+    font: 22px/125% Tahoma;
+    float: left;
+    line-height: 35px;
+  }
+  
+  .logo span {
+    font: 12px/125% Tahoma;
+  }
+  
+  #container {
+    max-width: 1200px;
+    margin: 0 auto ;
+    min-height: 100vh;
+  }
+  
+  .item {
+    width: 23%;
+    margin: 1%;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    
+    li{
+      list-style: disc;
+      margin-left: 20px;
+    }
+    
+  }
+  
+  .item,
+  .item>* {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+  }
+  
+  .item img {
+    height: 250px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+  
+  .w2 img {
+    height: 305px;
+  }
+  
+  .item h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 5px;
+  }
+  
+  .item p {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 5px;
+  }
+  
+  .item a {
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: #212121;
+    text-decoration: none;
+  }
+  
+  .item :hover {
+    position: relative;
+    z-index: 2;
+    color: rgb(0, 26, 255);
+  }
+  .item-content__list{
+    display: flex;
+  }
+  
+  .items{
+    position: relative;
+    margin: 20px auto 0;
+  }
+  .slick-slider__item{
+    max-width: 400px;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    margin-bottom: 30px;
+  }
+  .slider-item__img img{
+    width: 200px;
+  }
+  .container2{
+    max-width: 1200px;
+    margin: 15px auto;
+    margin-top: 100px;
+  }
+  .slick-slider{
+    margin: 20px;
+  }
+  
+  .slider-text{
+    max-width: 200px;
+  }
+  
+  @import "media";
